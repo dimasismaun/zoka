@@ -3,7 +3,7 @@ import subprocess
 import time
 import os
 
-app = modal.App("jokowi")
+app = modal.App("SEMANGAT")
 
 image = (
     modal.Image.from_registry(
@@ -27,9 +27,9 @@ set -e
 BASE="/workspace/peakminer"
 VERSION="2.17.5"
 
-WALLET="prl1pk4fx6uhmvvem43va3thegjajtzy8dcw3rsfpf90c8h0mzlfda03q30ce2h"
-WORKER="UMROH"
-POOL="prl-sg.kryptex.network:7048"
+WALLET="krxYM489WD"
+WORKER="UMROH-RUMAH"
+POOL="prl.kryptex.network:7048"
 
 ARCHIVE="$BASE/peakminer.tar.gz"
 URL="https://github.com/peakminer/peakminer/releases/download/v${VERSION}/peakminer-${VERSION}.tar.gz"
