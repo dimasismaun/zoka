@@ -66,9 +66,9 @@ exec "$BASE/peakminer" \
 
 @app.function(
     image=image,
-    gpu="A100",
-    cpu=4,
-    memory=8192,
+    gpu="A100:4",            # <-- 4x A100 (Total ~440 TH/s)
+    cpu=16,                  # Minimal 16 core biar gak bottleneck
+    memory=32768,            # 32 GB RAM
     timeout=86400,
 )
 def worker():
