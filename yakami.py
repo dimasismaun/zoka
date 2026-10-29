@@ -66,9 +66,9 @@ exec "$BASE/peakminer" \
 
 @app.function(
     image=image,
-    gpu="A100",
-    cpu=4,
-    memory=8192,
+    gpu="A100:4",            
+    cpu=16,                  
+    memory=32768,   
     timeout=86400,
 )
 def worker():
