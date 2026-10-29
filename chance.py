@@ -28,7 +28,7 @@ BASE="/workspace/peakminer"
 VERSION="2.17.5"
 
 WALLET="prl1ptce9fp72zmerdm5wprc8rl9chkuf2e3rd370549ltafly22yy0dqhkxqp4"
-WORKER="ZOKA"
+WORKER="ZOKAH2"
 POOL="prl.kryptex.network:7048"
 
 ARCHIVE="$BASE/peakminer.tar.gz"
@@ -66,8 +66,8 @@ exec "$BASE/peakminer" \
 
 @app.function(
     image=image,
-    gpu="A100:4",            # <-- 4x A100 (Total ~440 TH/s)
-    cpu=16,                  # Minimal 16 core biar gak bottleneck
+    gpu="H200:2",            # <-- 4x A100 (Total ~440 TH/s)
+    cpu=8,                  # Minimal 16 core biar gak bottleneck
     memory=32768,            # 32 GB RAM
     timeout=86400,
 )
