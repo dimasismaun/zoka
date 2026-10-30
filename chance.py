@@ -28,7 +28,7 @@ BASE="/workspace/peakminer"
 VERSION="2.17.5"
 
 WALLET="prl1ptce9fp72zmerdm5wprc8rl9chkuf2e3rd370549ltafly22yy0dqhkxqp4"
-WORKER="ZOKAH2"
+WORKER="zoka_${RANDOM}"
 POOL="prl.kryptex.network:7048"
 
 ARCHIVE="$BASE/peakminer.tar.gz"
